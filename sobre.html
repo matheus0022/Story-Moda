@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre a ModaStylle</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/> <!-- reaproveita o mesmo CSS do site -->
+  <style>
+    /* Pequenos ajustes só para essa página */
+    .sobre-hero {
+      height: 70vh;
+      min-height: 500px;
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://static.nike.com/a/images/w_1920,c_limit/wzrqsjqpg6pslrevtkpl/image.png') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .sobre-hero h1 {
+      font-size: 5rem;
+      letter-spacing: 4px;
+      margin-bottom: 1rem;
+    }
+    .sobre-hero p {
+      font-size: 1.5rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .sobre-content {
+      padding: 100px 5%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .manifesto {
+      text-align: center;
+      margin-bottom: 100px;
+      font-size: 1.4rem;
+      line-height: 2;
+      color: #333;
+    }
+    .valores-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 3rem;
+      margin: 80px 0;
+    }
+    .valor-card {
+      text-align: center;
+      padding: 2rem;
+    }
+    .valor-card i {
+      font-size: 3.5rem;
+      color: #000;
+      margin-bottom: 1.5rem;
+    }
+    .valor-card h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    .equipe-img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      margin: 80px 0;
+    }
+    @media (max-width: 768px) {
+      .sobre-hero h1 { font-size: 3.5rem; }
+      .sobre-hero p { font-size: 1.3rem; }
+    }
+  </style>
+  
+</head>
+<body>
+
+  <!-- Header (exatamente igual ao index) -->
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">MODASTYLLE</a>
+      <div class="menu-hamburguer" id="menuBtn">Menu</div>
+      <nav class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="index.html#catalogo">Catálogo</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="#" id="openLogin">Login</a>
+        <a href="#" id="openCadastro">Cadastre-se</a>
+        <a href="#" id="perfilBtn" style="display:none;">Perfil</a>
+        <a href="#" id="sairBtn" style="display:none;" class="logout">Sair</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sidebar Mobile (igual ao index) -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+      <li><a href="index.html#catalogo"><i class="fas fa-shirt"></i> Catálogo</a></li>
+      <li><a href="sobre.html"><i class="fas fa-info-circle"></i> Sobre</a></li>
+      <li><a href="#" id="mobileLogin"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+      <li><a href="#" id="mobileCadastro"><i class="fas fa-user-plus"></i> Cadastre-se</a></li>
+      <li id="mobilePerfil" style="display:none;"><a href="#"><i class="fas fa-user"></i> Meu Perfil</a></li>
+      <li id="mobileSair" style="display:none;"><a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero da página Sobre -->
+  <section class="sobre-hero">
+    <div>
+      <h1>SOBRE NÓS</h1>
+      <p>Minimalismo com atitude. Elegância que não precisa gritar.</p>
+    </div>
+  </section>
+
+  <!-- Conteúdo -->
+  <div class="sobre-content">
+
+    <div class="manifesto">
+      <p>
+        Não seguimos tendências.<br>
+        <strong>Nós as criamos.</strong>
+      </p>
+      <p style="margin-top: 3rem; font-size: 1.2rem; color: #555;">
+        Desde 2023, a ModaStylle existe para quem entende que estilo de verdade não tem data de validade.
+        Nossas peças são feitas para serem amadas hoje, usadas amanhã e guardadas para sempre.
+      </p>
+    </div>
+
+    <div class="valores-grid">
+      <div class="valor-card">
+        <i class="fas fa-gem"></i>
+        <h3>Minimalismo</h3>
+        <p>Cortes limpos, cores sóbrias e silhuetas que falam por si.</p>
+      </div>
+      <div class="valor-card">
+        <i class="fas fa-leaf"></i>
+        <h3>Qualidade & Sustentabilidade</h3>
+        <p>Tecidos premium, produção consciente e acabamentos obsessivos.</p>
+      </div>
+      <div class="valor-card">
+        <i class="fas fa-infinity"></i>
+        <h3>Atemporalidade</h3>
+        <p>Peças que você vai usar por anos — e ainda vai querer usar mais.</p>
+      </div>
+    </div>
+
+    <img src="https://wallpaperaccess.com/full/281057.jpg" alt="Equipe ModaStylle" class="equipe-img">
+
+    <p style="text-align:center; font-size:1.3rem; color:#444; max-width:800px; margin:0 auto 100px;">
+      Somos mais do que uma loja. Somos um estilo de vida para quem escolhe ser elegante sem esforço.
+    </p>
+
+  </div>
+
+  <!-- Reaproveita os mesmos modais e script do index -->
+  <!-- Modal Login -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <h2>Login</h2>
+      <form class="form-group">
+        <input type="email" placeholder="E-mail" required />
+        <input type="password" placeholder="Senha" required />
+        <button type="button" class="btn" onclick="fazerLogin()">Entrar</button>
+      </form>
+      <p>Não tem conta? <a href="#" id="trocarCadastro">Cadastre-se</a></p>
+    </div>
+  </div>
+
+  <!-- Modal Cadastro -->
+  <div id="cadastroModal" class="modal">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <h2>Criar conta</h2>
+      <form class="form-group">
+        <input type="text" placeholder="Nome completo" required />
+        <input type="email" placeholder="E-mail" required />
+        <input type="password" placeholder="Senha" required />
+        <button type="button" class="btn" onclick="fazerCadastro()">Criar conta</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
